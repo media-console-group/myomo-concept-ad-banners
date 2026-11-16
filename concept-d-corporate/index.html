@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Myomo, Inc. — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Myomo, Inc. — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://ir-landing-concepts.netlify.app/myomo/
+  Styled from the company's own CORPORATE website (https://myomo.com/), not the IR
+  landing page that Concepts A-C are built from: its white header + logo
+  lockup, heading/body fonts, palette, accent underline bars, button style
+  and footer strip. "Homepage in miniature": each slide is one module of the
+  corporate homepage, alternating photo and light grounds. Myomo build:
+    1 homepage hero -> 2 icon row -> 3 clinician card -> 4 blue band.
+  Module classes (m-hero / m-stats / m-split / m-band) and the shared parts
+  (d-stat, d-list, d-arrows) live in style.css; every colour is a :root token
+  filled from brand.json "corp". Re-module a slide if the site has no such
+  module. Photos are the site's own photography, cropped into assets/;
+  assets/logo.svg is the site's own logo file. Every claim comes from the
+  project fact sheet (.tmp/facts.md).
+-->
+
+<div id="banner" aria-label="Myomo, Inc. investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1: Overview -->
+    <section class="slide m-hero" data-index="0">
+      <!-- Module: myomo.com homepage hero: real MyoPro photo beside the site's #0050A8 to #005EB8 gradient panel,
+           white bold Source Sans title, green inline accent. Facts: facts.md matrix 1-2 (Q3 release, Nov 9, 2026). -->
+      <img class="d-photo" src="assets/slide-1.jpg" alt="A man wearing a MyoPro arm brace walks beside a clinician">
+      <div class="hero-panel">
+        <h2>Helping People Regain the Function of Their Arm</h2>
+        <p class="hero-desc">The MyoPro&reg; is a <span class="g">powered arm brace</span> that reads the user&rsquo;s own muscle signals through non-invasive sensors.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">$12.3M</p>
+            <p class="d-label">Record Q3 2026 revenue</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">+22%</p>
+            <p class="d-label">Year over year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: Proof -->
+    <section class="slide m-stats" data-index="1">
+      <!-- Module: myomo.com "Why MyoPro Users Love Us" row: centred navy heading, green round icons,
+           bold navy values. Facts: Q3 release (Nov 9, 2026). -->
+      <div class="stats-head">
+        <h2>Third Quarter 2026</h2>
+        <p>Results reported by the company on November 9, 2026.</p>
+      </div>
+      <div class="d-stats">
+        <div class="d-stat">
+          <span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18h16M7 15V10M12 15V6M17 15V8" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg></span>
+          <p class="d-value">258</p>
+          <p class="d-label">Record orders, up 13% year over year</p>
+        </div>
+        <div class="d-stat">
+          <span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 17 10 11l3 3 6-7M14 7h5v5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <p class="d-value">71.3%</p>
+          <p class="d-label">Gross margin, up from 63.8%</p>
+        </div>
+        <div class="d-stat">
+          <span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M8 8h6a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h7" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></span>
+          <p class="d-value">$46&ndash;47M</p>
+          <p class="d-label">FY2026 revenue guidance (company)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Platform -->
+    <section class="slide m-split" data-index="2">
+      <!-- Module: myomo.com "Physicians and Clinicians" card: photo over a card, bold heading, navy button style.
+           Photo: the homepage clinician photo. Facts: About Myomo, IR page "How the MyoPro works". -->
+      <figure class="split-fig">
+        <img class="split-photo" src="assets/slide-3.jpg" alt="A clinician fits a MyoPro arm brace on a patient">
+      </figure>
+      <div class="split-card">
+        <h2>How the MyoPro Works</h2>
+        <ul class="d-list">
+          <li>Sensors on the skin read the user&rsquo;s own EMG signal. Nothing is implanted.
+            <ul class="d-arrows">
+              <li>The signal becomes a motor command</li>
+              <li>Motors assist the elbow, wrist and hand</li>
+              <li>Custom-fabricated, used at home</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4: Access -->
+    <section class="slide m-band" data-index="3">
+      <!-- Module: myomo.com blue band (#005EB8 gradient) over a photo, white copy. Photo: the homepage
+           "Patients and Caregivers" image. Facts: Q3 release (54%, 500+), Q2 release (100M+ lives, Aug 5, 2026). -->
+      <img class="d-photo" src="assets/slide-4.jpg" alt="A MyoPro user talks with friends at home">
+      <div class="band-content">
+        <p class="band-eyebrow">Access &amp; Referrals</p>
+        <h2>More Patients Through Referral Networks</h2>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">54%</p>
+            <p class="d-label">Q3 revenue from recurring sources (33% a year ago)</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">500+</p>
+            <p class="d-label">Rehab sites referring via MyoConnect</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">100M+</p>
+            <p class="d-label">Covered lives in network (Aug 2026)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.svg" alt="Myomo, Inc." width="104" height="27">
+    <span id="ticker">NYSE&nbsp;American:&nbsp;MYO</span>
+  </header>
+
+  <!-- Slider controls: round navy buttons, like the homepage slider's pause control -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Overview"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: Q3 results"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: How it works"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Access"></button>
+    </div>
+
+    <!-- The corporate site's .btn: radius/gradient border from brand.json corp, arrow after the label -->
+    <a href="#" id="cta">
+      <span>Investors</span>
+      <svg id="cta-arrow" viewBox="0 0 24 25" aria-hidden="true"><path d="M12 4.18066L10.585 5.59566L16.17 11.1807H4V13.1807H16.17L10.585 18.7657L12 20.1807L20 12.1807L12 4.18066Z"/></svg>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls"><span>Company-reported results (Nov 9, 2026). Orders are not revenue. Forward-looking statements on guidance, reimbursement and referrals. See SEC filings for risk factors.</span></p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
